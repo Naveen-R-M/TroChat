@@ -26,23 +26,29 @@ class _HomeScreenState extends State<HomeScreen> {
                       end: Alignment.topCenter,
                       colors: [Color(0xff6c5b7b), Color(0xffa2738c)]),
                 ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Column(
                   children: [
-                    CircleAvatar(
-                      radius: width / 50,
-                      backgroundColor: Colors.white,
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(
+                          radius: width / 50,
+                          backgroundColor: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          'Note to Self',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Montserrat"),
+                        )
+                      ],
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'Note to Self',
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "Montserrat"),
-                    )
                   ],
                 ),
               ),
